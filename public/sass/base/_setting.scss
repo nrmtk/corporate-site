@@ -1,0 +1,24 @@
+%cf{
+    &::after{
+        display: block;
+        clear: both;
+        content: "";
+    }
+}
+
+@mixin font-size($base:16){
+  font-size: $base + px;
+  font-size: ($base/10)+rem;
+}
+
+$size-max: 1000px;
+$size-main: 620px;
+$size-side: 300px;
+
+$sp: 768px;
+$pc: 1200px;
+$color-main: #000;
+$color-base: #fff;
+$color-acc: #f00;
+$color-txt: #f00;
+$color-title: #f00;

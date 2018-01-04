@@ -1,0 +1,20 @@
+@charset "utf-8";
+//共通するcss
+
+@import "base/setting";
+@import "base/reset";
+@import "base/base";
+
+//layout
+
+@import "layout/header";
+@import "layout/main";
+@import "layout/side";
+@import "layout/footer";
+
+//パーツ類
+@import "module/btn";
+@import "module/title";
+
+//page
+@import "page/index";

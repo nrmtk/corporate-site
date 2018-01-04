@@ -1,0 +1,20 @@
+html{
+    font-size: 62.5%;
+}
+
+body{
+    min-width: 320px;
+//320px未満にはならない
+}
+
+//共通css
+img{
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
+}
+
+
+*,*::before,*::after{
+    box-sizing: border-box;
+}
