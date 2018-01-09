@@ -1,0 +1,138 @@
+.heading img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 30px;
+}
+
+.mv {
+    width: 100%;
+}
+
+//aboutの編集ここから
+.img-main {
+    max-width: 1166px;
+    margin: 0 20px;
+}
+
+.img-main img {
+    width: 100%;
+}
+
+.section-main__txt {
+    font-size: 16px;
+    color: #996c33;
+    font-family: "Meiryo";
+    text-align: center;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+.img-main {
+    max-width: 1166px;
+    margin: 0 20px;
+}
+
+.img-main img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.img-rec {
+    //isono:幅を50%にすることでコンテンツを２つ並べてます。1にしたい場合はwidth:100%にすればよいです。
+    width: 50%;
+    float: left;
+}
+
+.img-rec img {
+    //isono:画像大きさ調整
+    width: 60%;
+}
+
+.fig-txt {
+    font-size: 16px;
+    font-family: "Meiryo";
+    color: #996c33;
+    padding: 10px;
+}
+
+.content-figure {
+    width: 100%;
+    text-align: center;
+    //isono:クリアフィックスを入れてfloat解除をしましょう。
+    @extend %cf;
+}
+
+.access {
+    text-align: center;
+}
+
+.access-txt {
+    font-size: 20px;
+    font-family: "Meiryo";
+    color: #996c33;
+    margin-top: 20px;
+    //    border-bottom: 1px solid #996c33;
+    text-align: left;
+    padding: 10px;
+}
+
+.section-access {
+    text-align: center;
+    display: inline-block;
+}
+
+.section-access__txt {
+    width: 400px;
+    font-size: 16px;
+    color: #996c33;
+    font-family: "Meiryo";
+    text-align: left;
+    line-height: 1.5;
+    padding: 20px;
+}
+
+//isono:レイアウトが崩れるのでフレックスボックスを使います。
+.wrap-access-txt {
+    display: flex;
+    flex-direction: column;
+}
+
+.section-access {
+    display: block;
+    margin: 0 auto;
+}
+
+@media screen and (min-width: 758px) {
+    .section-main__txt {
+        font-size: 30px;
+        color: #996c33;
+        font-family: "Meiryo";
+        text-align: center;
+        line-height: 1.5;
+    }
+    .fig-txt {
+        font-size: 28px;
+        font-family: "Meiryo";
+        color: #996c33;
+        padding: 20px;
+    }
+    .wrap-access-txt {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: row;
+    }
+    .section-access {
+        display: block;
+        margin: 0 auto;
+    }
+    
+    .access-txt{
+        font-size: 28px;
+    }
+    
+    .section-access__txt{
+        width: 460px;
+        font-size: 20px;
+    }
+}
