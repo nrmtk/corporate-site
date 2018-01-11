@@ -106,12 +106,10 @@ img {
 #container {
   width: 100%;
   height: auto;
-  background-color: #fcfda7;
   margin: 0 auto;
   overflow: hidden; }
 
 #wrapper {
-  max-width: 1166px;
   height: auto;
   margin: 0 auto; }
 
@@ -130,68 +128,167 @@ img {
   padding: 10px;
   float: left; }
 
-.toggle-button {
-  float: right;
-  margin-right: 20px; }
-
-.mv img {
+.mv {
   width: 100%;
-  margin: 0 auto; }
+  height: 500px;
+  background: url(../../img/mv_top_03.jpg) no-repeat center center; }
 
 .mv-title {
-  font-size: 100px;
+  font-size: 80px;
   font-family: "Pinyon Script";
-  color: #81d8d0; }
+  font-weight: bold;
+  color: #81d8d0;
+  text-align: center;
+  padding-top: 20px;
+  white-space: nowrap; }
 
 .mv-txt {
-  font-size: 60px;
+  font-size: 36px;
   font-family: "Pinyon Script";
-  color: #fff; }
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding-top: 140px;
+  white-space: nowrap; }
 
-.mv-title-section {
+.nav {
+  display: none; }
+
+button {
   position: absolute;
-  top: 50%;
-  left: 50%; }
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer; }
+
+.toggle-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none; }
+
+.nav-toggle-list {
+  list-style-type: none;
+  min-width: 320px;
+  height: 365px;
+  background-color: #b2e3de;
+  text-align: center;
+  overflow: hidden;
+  display: none; }
+
+.nav-toggle li {
+  font-size: 36px;
+  font-family: "Pinyon Script";
+  height: 60px;
+  display: block;
+  line-height: 60px;
+  border-bottom: 1px solid #fff; }
+
+.nav-toggle li:last-child {
+  border: none; }
+
+.nav-toggle a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold; }
+
+.nav-toggle-jp {
+  font-size: 12px;
+  font-family: "Meiryo";
+  color: #fff;
+  font-family: "Meiryo";
+  margin-left: 20px;
+  white-space: nowrap; }
+
+.nav-jp {
+  font-size: 12px;
+  font-family: "Meiryo";
+  color: #fff;
+  font-family: "Meiryo";
+  margin-left: 2px;
+  white-space: nowrap; }
 
 @media screen and (min-width: 758px) {
   #header {
-    height: auto; }
+    width: 100%;
+    height: auto;
+    text-align: center; }
   .toggle-button {
+    display: none; }
+  .nav-toggle-list {
     display: none; }
   .logo {
     text-align: center;
+    display: inline-block; }
+  .logo img {
+    max-width: 20%;
+    padding: 30px;
+    display: inline-block;
+    float: none; }
+  .mv {
+    width: 100%;
+    height: 800px; }
+  .mv-title {
+    font-size: 150px;
+    font-weight: bold;
+    font-family: "Pinyon Script";
+    color: #81d8d0;
+    padding-top: 30px; }
+  .mv-txt {
+    font-size: 80px;
+    font-weight: bold;
+    font-family: "Pinyon Script";
+    color: #fff;
+    padding-top: 240px; }
+  .nav {
+    display: block; }
+  .nav-list {
+    height: auto;
+    background-color: #996c33;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flex;
     display: -o-flex;
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  .logo img {
-    max-width: 20%;
-    padding: 30px;
-    display: inline-block; }
-  .mv-title {
-    font-size: 200px;
+    display: flex;
+    list-style-type: none;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .nav-item {
+    font-size: 36px;
     font-family: "Pinyon Script";
-    color: #81d8d0; }
-  .mv-txt {
-    font-size: 80px;
-    font-family: "Pinyon Script";
-    color: #fff; }
-  .mv-title-section {
-    position: absolute;
-    top: 50%;
-    left: 50%; } }
+    padding: 36px;
+    margin-right: 36px; }
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold; }
+  .nav-item a:hover {
+    color: #81d8d0;
+    border-bottom: 1px dashed #81d8d0; }
+  .nav-jp {
+    font-size: 20px;
+    color: #fff;
+    white-space: nowrap;
+    font-weight: normal; }
+  .nav-jp:hover {
+    border-bottom: none; }
+  .nav-jp {
+    font-size: 20px;
+    font-family: "Meiryo";
+    margin-left: 2px; } }
 
 .heading img {
   width: 100%;
   height: auto;
   margin: 0 auto;
   padding: 30px 30px; }
-
-.mv {
-  width: 100%; }
 
 .img-main {
   max-width: 1166px;
@@ -204,7 +301,6 @@ img {
   font-size: 16px;
   color: #996c33;
   font-family: "Meiryo";
-  text-align: center;
   line-height: 1.5;
   padding: 20px; }
 
@@ -216,6 +312,26 @@ img {
   width: 100%;
   margin: 0 auto; }
 
+.recommended {
+  margin-top: 180px; }
+
+.heading-rec {
+  font-size: 36px;
+  font-family: "Pinyon Script";
+  font-weight: bold;
+  color: #996c33;
+  border-bottom: 2px solid #996c33;
+  margin-bottom: 50px;
+  padding-left: 20px; }
+
+.heading-rec-jpg {
+  font-size: 16px;
+  font-family: "Meiryo";
+  font-weight: normal;
+  padding-top: 16px;
+  padding-right: 20px;
+  float: right; }
+
 .img-rec {
   width: 50%;
   float: left; }
@@ -224,7 +340,7 @@ img {
   width: 60%; }
 
 .fig-txt {
-  font-size: 16px;
+  font-size: 20px;
   font-family: "Meiryo";
   color: #996c33;
   padding: 10px; }
@@ -271,12 +387,31 @@ img {
   margin: 0 auto; }
 
 @media screen and (min-width: 758px) {
+  .heading img {
+    padding-bottom: 50px; }
   .section-main__txt {
-    font-size: 30px;
+    font-size: 16px;
     color: #996c33;
     font-family: "Meiryo";
-    text-align: center;
-    line-height: 1.5; }
+    line-height: 1.5;
+    text-align: left; }
+  .recommended {
+    margin-top: 300px; }
+  .heading-rec {
+    font-size: 64px;
+    font-family: "Pinyon Script";
+    font-weight: bold;
+    color: #996c33;
+    border-bottom: 4px solid #996c33;
+    margin-bottom: 50px;
+    padding-left: 20px; }
+  .heading-rec-jpg {
+    font-size: 28px;
+    font-family: "Meiryo";
+    font-weight: normal;
+    padding-top: 30px;
+    padding-right: 20px;
+    float: right; }
   .fig-txt {
     font-size: 28px;
     font-family: "Meiryo";
@@ -305,7 +440,8 @@ img {
   height: 400px;
   background-color: #009e96;
   clear: both;
-  text-align: center; }
+  text-align: center;
+  margin-top: 100px; }
 
 .footer-logo {
   padding-top: 80px;
@@ -330,8 +466,9 @@ img {
   padding: 50px 30px; }
 
 .footer-item {
-  font-size: 28px;
-  margin-right: 30px;
+  font-size: 24px;
+  font-weight: bold;
+  margin-right: 20px;
   font-family: "Pinyon Script"; }
 
 .footer-item a {
@@ -339,8 +476,8 @@ img {
   color: #fff; }
 
 .footer-item a:hover {
-  border-bottom: 1px solid #fff;
-  color: #fff; }
+  border-bottom: 1px dashed #996c33;
+  color: #996c33; }
 
 .footer-copy {
   font-size: 12px;
@@ -367,10 +504,157 @@ img {
     font-size: 20px;
     font-family: "Arial";
     color: #fff;
-    margin-top: 100px; } }
+    margin-top: 120px; } }
 
 .btn-more {
-  margin: 40px;
-  max-width: 24%;
-  padding: 20px;
-  float: right; }
+  display: block;
+  width: 150px;
+  height: 50px;
+  float: right;
+  margin-right: 20px;
+  background-image: url(../img/btn_more.svg);
+  background-position: center center;
+  background-size: cover; }
+
+@media screen and (min-width: 758px) {
+  .btn-more {
+    width: 200px;
+    height: 67px;
+    float: none;
+    margin: 40px auto 0; } }
+
+.mv-contact {
+  width: 100%;
+  height: 500px;
+  background: url(../../img/contact.jpg) no-repeat center center; }
+
+.contact {
+  margin-top: 100px;
+  margin-bottom: 50px; }
+
+.contact-txt {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.title-contact {
+  font-size: 36px;
+  font-weight: bold;
+  font-family: "Pinyon Script";
+  color: #996c33;
+  border-bottom: 4px solid #996c33;
+  margin-bottom: 50px;
+  padding-left: 20px; }
+
+.form-contents dt {
+  font-size: 16px;
+  font-family: "Meiryo";
+  color: #996c33;
+  float: left;
+  margin-left: 20px; }
+
+.form-contents dd {
+  font-size: 20px;
+  font-family: "Meiryo";
+  color: #996c33;
+  padding-left: 180px;
+  margin-bottom: 30px; }
+
+#name {
+  padding: 4px; }
+
+#name-ktkn {
+  padding: 4px; }
+
+#address-num {
+  padding: 4px; }
+
+#address {
+  width: 240px;
+  margin-bottom: 10px;
+  padding: 4px;
+  display: block; }
+
+#tel {
+  padding: 4px; }
+
+#mail {
+  padding: 4px; }
+
+#message {
+  width: 300px; }
+
+.title-contact-jp {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Meiryo";
+  float: right;
+  color: #996c33;
+  padding-top: 10px;
+  padding-right: 20px; }
+
+.button-form {
+  width: 100%;
+  text-align: center;
+  display: inline-block; }
+
+.submit-btn {
+  margin: 10px;
+  padding: 4px 20px; }
+
+.reset-btn {
+  margin: 10px;
+  padding: 4px 10px; }
+
+@media screen and (min-width: 758px) {
+  .mv-contact {
+    width: 100%;
+    height: 800px; }
+  .title-contact {
+    font-size: 64px;
+    font-family: "Pinyon Script";
+    color: #996c33;
+    border-bottom: 4px solid #996c33;
+    padding-left: 20px; }
+  .title-contact-jp {
+    font-size: 28px;
+    font-weight: normal;
+    font-family: "Meiryo";
+    color: #996c33;
+    float: right;
+    padding-top: 30px; }
+  .form-contents dt {
+    font-size: 24px;
+    font-family: "Meiryo";
+    color: #996c33;
+    float: left;
+    margin-left: 160px; }
+  .form-contents dd {
+    font-size: 24px;
+    font-family: "Meiryo";
+    color: #996c33;
+    padding-left: 500px;
+    margin-bottom: 40px; }
+  #name {
+    width: 300px;
+    padding: 4px; }
+  #name-ktkn {
+    width: 300px;
+    padding: 4px; }
+  #address-num {
+    width: 240px;
+    padding: 4px;
+    display: inline-block; }
+  #address {
+    width: 400px;
+    margin-bottom: 10px;
+    padding: 4px;
+    display: block; }
+  #tel {
+    width: 300px;
+    padding: 4px; }
+  #mail {
+    width: 400px;
+    padding: 4px; }
+  #message {
+    width: 400px; } }

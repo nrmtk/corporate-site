@@ -1,6 +1,19 @@
-.btn-more{
-    margin: 40px;
-    max-width: 24%;
-    padding: 20px;
-    float: right;
+.btn-more {
+  display: block;
+  width: 150px;
+  height: 50px;
+  float: right;
+  margin-right: 20px;
+  background-image: url(../img/btn_more.svg);
+  background-position: center center;
+  background-size: cover;
+}
+
+@media screen and (min-width:758px) {
+  .btn-more {
+    width: 200px;
+    height: 67px;
+    float: none;
+    margin: 40px auto 0;
+  }
 }

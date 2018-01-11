@@ -4,6 +4,7 @@
     background-color: #009e96;
     clear: both;
     text-align: center;
+    margin-top: 100px;
 }
 
 .footer-logo{
@@ -29,8 +30,9 @@
 }
 
 .footer-item{
-    font-size: 28px;
-    margin-right: 30px;
+    font-size: 24px;
+  font-weight: bold;
+    margin-right: 20px;
     font-family: "Pinyon Script";
 }
 
@@ -40,8 +42,8 @@
 }
 
 .footer-item a:hover{
-    border-bottom: 1px solid #fff;
-    color: #fff;
+    border-bottom: 1px dashed #996c33;
+    color: #996c33;
 }
 
 .footer-copy{
@@ -79,7 +81,7 @@
     font-size: 20px;
     font-family: "Arial";
     color: #fff;
-    margin-top: 100px;
+    margin-top: 120px;
 }
 
     

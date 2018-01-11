@@ -1,117 +1,225 @@
-#header{
-    min-width: 320px;
-    height: auto;
-    background-color: #81D8D0;
-    margin: 0 auto;
-    overflow: hidden;
+#header {
+  min-width: 320px;
+  height: auto;
+  background-color: #81D8D0;
+  margin: 0 auto;
+  overflow: hidden;
 }
 
-.logo{
-//    width: cal(73/320*100%);
-//    height: cal(42/68*100%);
-    padding: 12px;
+.logo {
+  padding: 12px;
 }
 
-.logo img{
-    max-width: 20%;
-    padding: 10px;
-//    width: cal(73/320*100%);
-//    height: cal(42/68*100%);
-    float: left;
-    @extend %cf;
+.logo img {
+  max-width: 20%;
+  padding: 10px;
+  float: left;
+  @extend %cf;
 }
 
-.toggle-button{
-    
-    float: right;
-    margin-right: 20px;
-//    line-height: 68px;
-    
-}
-
-.mv img{
-    width: 100%;
-    margin: 0 auto;
-//    margin-bottom: 16px;
-}
-
-//img{
-////    width: cal(100/320*100%);
-////    height: cal(32/68*100%);
-////    padding: 20px;
+//.toggle-button {
 //    float: right;
+//    margin-right: 20px;
+//    //    line-height: 68px;
 //}
+.mv {
+  width: 100%;
+  height: 500px;
+  background: url(../../img/mv_top_03.jpg) no-repeat center center;
+}
 
-.mv-title{
-    font-size: 100px;
+.mv-title {
+  font-size: 80px;
+  font-family: "Pinyon Script";
+  font-weight: bold;
+  color: #81d8d0;
+  text-align: center;
+  padding-top: 20px;
+  white-space: nowrap;
+}
+
+.mv-txt {
+  font-size: 36px;
+  font-family: "Pinyon Script";
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  padding-top: 140px;
+  white-space: nowrap;
+}
+
+//.mv-title-section{
+//  margin-top: 200px;
+//}
+//.mv-title-section {
+//    position: absolute;
+//    top: 50%;
+//    left: 50%;
+//}
+//.mv-title-section {
+//  //  position: absolute; 
+//  //  width: 100%; 
+////  top: 50%; 
+////  left: 50%; 
+////  transform: translateY(-50%) translateX(-50%); 
+//  text-align: center; 
+//}
+.nav {
+  display: none;
+}
+
+button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.toggle-close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-toggle-list {
+  list-style-type: none;
+  min-width: 320px;
+  height: 365px;
+  background-color: #b2e3de;
+  text-align: center;
+  overflow: hidden;
+  display: none;
+}
+
+//.nav-toggle-item{
+//    
+//    height: 60px;
+//    display: block;
+//}
+.nav-toggle li {
+  font-size: 36px;
+  font-family: "Pinyon Script";
+  height: 60px;
+  display: block;
+  line-height: 60px;
+  border-bottom: 1px solid #fff;
+}
+
+.nav-toggle li:last-child {
+  border: none;
+}
+
+.nav-toggle a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: bold;
+}
+
+.nav-toggle-jp {
+  font-size: 12px;
+  font-family: "Meiryo";
+  color: #fff;
+  font-family: "Meiryo";
+  margin-left: 20px;
+  white-space: nowrap;
+}
+
+.nav-jp {
+  font-size: 12px;
+  font-family: "Meiryo";
+  color: #fff;
+  font-family: "Meiryo";
+  margin-left: 2px;
+  white-space: nowrap;
+}
+
+@media screen and (min-width: 758px) {
+  #header {
+    width: 100%;
+    height: auto;
+    text-align: center;
+  }
+  .toggle-button {
+    display: none;
+  }
+  .nav-toggle-list {
+    display: none;
+  }
+  .logo {
+    text-align: center;
+    display: inline-block;
+  }
+  .logo img {
+    max-width: 20%;
+    padding: 30px;
+    display: inline-block;
+    float: none;
+  }
+  .mv {
+    width: 100%;
+    height: 800px;
+  }
+  .mv-title {
+    font-size: 150px;
+    font-weight: bold;
     font-family: "Pinyon Script";
     color: #81d8d0;
-    
-}
-
-.mv-txt{
-    font-size: 60px;
-    font-family: "Pinyon Script";
-    color: #fff;
-}
-
-
-.mv-title-section{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-
-@media screen and (min-width: 758px){
-    
-    #header{
-//        height: 200px;
-        height: auto;
-     
-        
-        
-}
-    .toggle-button{
-        display: none;
-}
-    
-    .logo{
-        text-align: center;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
-        display: flex;
-    }
-    
-    
-    .logo img{
-        max-width: 20%;
-        padding: 30px;
-        display: inline-block;
-//        clear: both;
-        
-        
-    }
-    
-    .mv-title{
-    font-size: 200px;
-    font-family: "Pinyon Script";
-    color: #81d8d0;
-    
-}
-
-.mv-txt{
+    padding-top: 30px;
+  }
+  .mv-txt {
     font-size: 80px;
+    font-weight: bold;
     font-family: "Pinyon Script";
     color: #fff;
-}
-
-
-.mv-title-section{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-}
-    
+    padding-top: 240px;
+  }
+  .nav {
+    display: block;
+  }
+  .nav-list {
+    height: auto;
+    background-color: #996c33;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+    list-style-type: none;
+    justify-content: center;
+  }
+  .nav-item {
+    font-size: 36px;
+    font-family: "Pinyon Script";
+    padding: 36px;
+    margin-right: 36px;
+  }
+  .nav-item a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .nav-item a:hover {
+    color: #81d8d0;
+    border-bottom: 1px dashed #81d8d0;
+  }
+  .nav-jp {
+    font-size: 20px;
+    color: #fff;
+    white-space: nowrap;
+    font-weight: normal;
+  }
+  .nav-jp:hover {
+    border-bottom: none;
+  }
+  .nav-jp {
+    font-size: 20px;
+    font-family: "Meiryo";
+    margin-left: 2px;
+  }
 }
